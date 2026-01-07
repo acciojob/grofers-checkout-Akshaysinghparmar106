@@ -1,2 +1,81 @@
 
 /* Your CSS Code here. */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout {
+    max-width: 450px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.checkout h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section {
+    background: #fafafa;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.section h3 {
+    margin-top: 0;
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.section p, .section li {
+    color: #555;
+    font-size: 15px;
+}
+
+.section button {
+    background: none;
+    border: none;
+    color: #ff5722;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 5px;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff5722;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 3px 8px rgba(255,87,34,0.3);
+    transition: 0.2s;
+}
+
+.pay-btn:hover {
+    background: #e14d1f;
+    transform: translateY(-2px);
+}
+
+.pay-btn:active {
+    transform: scale(0.98);
+}
