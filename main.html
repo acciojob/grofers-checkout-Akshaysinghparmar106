@@ -1,68 +1,30 @@
 <!DOCTYPE html>
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Grocery List</title>
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 50%;
-    }
-    th, td {
-      border: 1px solid #333;
-      padding: 8px;
-      text-align: center;
-    }
-    .total {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
+<div class="checkout">
+  <h2>Checkout</h2>
 
-  <h2>Grocery List</h2>
+  <div class="section">
+    <h3>Delivery Address</h3>
+    <p>Akshay Parmar, Mumbai, India</p>
+    <button>Change</button>
+  </div>
 
-  <table id="grocery-table">
-    <tr>
-      <th>Item</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td class="item">Rice</td>
-      <td class="prices">50</td>
-    </tr>
-    <tr>
-      <td class="item">Milk</td>
-      <td class="prices">30</td>
-    </tr>
-    <tr>
-      <td class="item">Bread</td>
-      <td class="prices">20</td>
-    </tr>
-  </table>
+  <div class="section">
+    <h3>Items in Cart</h3>
+    <ul>
+      <li>Milk (₹45) x 2</li>
+      <li>Bread (₹30) x 1</li>
+      <li>Eggs (₹60) x 1</li>
+    </ul>
+  </div>
 
-  <script>
-    const prices = document.querySelectorAll(".prices");
-    let total = 0;
+  <div class="section">
+    <h3>Bill Details</h3>
+    <p>Subtotal: ₹180</p>
+    <p>Delivery Fee: ₹15</p>
+    <p><strong>Total: ₹195</strong></p>
+  </div>
 
-    prices.forEach(price => {
-      total += Number(price.textContent);
-    });
-
-    const table = document.getElementById("grocery-table");
-
-    const totalRow = document.createElement("tr");
-    const totalCell = document.createElement("td");
-
-    totalCell.colSpan = 2;
-    totalCell.classList.add("total");
-    totalCell.textContent = "Total Price: " + total;
-
-    totalRow.appendChild(totalCell);
-    table.appendChild(totalRow);
-  </script>
-
-</body>
-</html>
+  <button class="pay-btn">Proceed to Pay</button>
+</div>
